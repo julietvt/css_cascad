@@ -1,0 +1,46 @@
+/*
+a(элемент) - 1
+class - 10
+id - 100
+style - 1000
+*/
+
+*{
+    color: goldenrod;
+}
+
+li{
+    margin: 20px;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+}
+/*10*/
+.linkClass{
+    color: green;
+}
+/*100*/
+#linkId2{
+    color: darkslategrey;
+}
+/* 1+100+10 = 111 */
+#linkId2.linkClass{
+    color: deeppink !important;
+}
+/*100*/
+#linkId3{
+    color: blueviolet;
+}
+
+/*10+10=20*/
+.linkClass.newClass{
+    color: darkturquoise;
+}
+/*1+10+1=12*/
+a.linkClass:not(span){
+    color: greenyellow;
+}
+
+
